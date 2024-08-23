@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HabitFi: Advanced Habit-Based Financial Ecosystem</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>HabitFi: Advanced Habit-Based Financial Ecosystem</h1>
+        
+            
+                <a href="whitepaper.html" target="_blank">White Paper</a>
+            
+        
+    </header>
+    <main>
+        <section id="concept">
+            <h2>Concept Overview</h2>
+            <p>HabitFi is a revolutionary platform that combines habit formation with advanced financial instruments. Users create smart habit contracts that generate complex financial products, creating a dynamic marketplace for personal growth and investment.</p>
+        </section>
+        <section id="features">
+            <h2>Advanced Financial Features</h2>
+            <ul>
+                <li>Habit-backed tokens with real-time valuation</li>
+                <li>Derivatives market for habit contracts (futures, options, swaps)</li>
+                <li>Habit Index Funds and ETFs</li>
+                <li>Decentralized lending and borrowing using habit contracts as collateral</li>
+                <li>Habit Insurance and Risk Management products</li>
+                <li>Algorithmic trading strategies based on habit performance</li>
+            </ul>
+        </section>
+        <section id="create-contract">
+            <h2>Create Your Smart Habit Contract</h2>
+            <form id="habit-form">
+                <label for="habit">Habit Goal:</label>
+                <input type="text" id="habit" required>
+                
+                <label for="frequency">Frequency (per week):</label>
+                <input type="number" id="frequency" min="1" max="7" required>
+                
+                <label for="duration">Duration (in weeks):</label>
+                <input type="number" id="duration" min="1" max="52" required>
+                
+                <label for="stake">Stake Amount (ETH):</label>
+                <input type="number" id="stake" min="0.1" step="0.1" required>
+                
+                <label for="device">IoT Device for Tracking:</label>
+                <select id="device">
+                    <option value="smartwatch">Smartwatch</option>
+                    <option value="smartphone">Smartphone</option>
+                    <option value="smart-scale">Smart Scale</option>
+                    <option value="fitness-tracker">Fitness Tracker</option>
+                </select>
+                
+                <button type="submit">Create Smart Contract & Generate Financial Instruments</button>
+            </form>
+        </section>
+        <section id="financial-dashboard">
+            <h2>Financial Dashboard</h2>
+            <div id="market-overview">
+                <h3>Market Overview</h3>
+                <p>Total Contracts: <span id="total-contracts">0</span></p>
+                <p>Total Value Locked: <span id="total-value-locked">0</span> ETH</p>
+                <p>24h Trading Volume: <span id="trading-volume">0</span> ETH</p>
+                <p>HabitFi Index: <span id="habit-index">1000</span></p>
+            </div>
+            <div id="personal-portfolio">
+                <h3>Your Portfolio</h3>
+                <p>Portfolio Value: <span id="portfolio-value">0</span> ETH</p>
+                <p>Unrealized P/L: <span id="unrealized-pl">0</span> ETH</p>
+                <ul id="asset-list"></ul>
+            </div>
+        </section>
+        <section id="trading-platform">
+            <h2>Advanced Trading Platform</h2>
+            <div id="order-book">
+                <h3>Order Book</h3>
+                <div id="bids"></div>
+                <div id="asks"></div>
+            </div>
+            <div id="trading-actions">
+                <h3>Execute Trade</h3>
+                <form id="trade-form">
+                    <label for="asset-type">Asset Type:</label>
+                    <select id="asset-type" required>
+                        <option value="token">Habit Token</option>
+                        <option value="future">Habit Future</option>
+                        <option value="option">Habit Option</option>
+                        <option value="swap">Habit Swap</option>
+                    </select>
+                    <label for="asset-id">Asset ID:</label>
+                    <input type="text" id="asset-id" required>
+                    <label for="trade-type">Trade Type:</label>
+                    <select id="trade-type" required>
+                        <option value="buy">Buy</option>
+                        <option value="sell">Sell</option>
+                    </select>
+                    <label for="trade-amount">Amount:</label>
+                    <input type="number" id="trade-amount" min="0.01" step="0.01" required>
+                    <label for="trade-price">Price (ETH):</label>
+                    <input type="number" id="trade-price" min="0.000001" step="0.000001" required>
+                    <button type="submit">Place Order</button>
+                </form>
+            </div>
+        </section>
+        <section id="derivatives-market">
+            <h2>Derivatives Market</h2>
+            <div id="futures-contracts">
+                <h3>Habit Futures</h3>
+                <ul id="futures-list"></ul>
+            </div>
+            <div id="options-contracts">
+                <h3>Habit Options</h3>
+                <ul id="options-list"></ul>
+            </div>
+            <div id="swap-contracts">
+                <h3>Habit Swaps</h3>
+                <ul id="swaps-list"></ul>
+            </div>
+        </section>
+        <section id="defi-services">
+            <h2>DeFi Services</h2>
+            <div id="lending-pool">
+                <h3>Lending Pool</h3>
+                <p>Total Deposits: <span id="total-deposits">0</span> ETH</p>
+                <p>Available to Borrow: <span id="available-to-borrow">0</span> ETH</p>
+                <form id="lending-form">
+                    <label for="lending-action">Action:</label>
+                    <select id="lending-action" required>
+                        <option value="deposit">Deposit</option>
+                        <option value="borrow">Borrow</option>
+                        <option value="repay">Repay</option>
+                        <option value="withdraw">Withdraw</option>
+                    </select>
+                    <label for="lending-amount">Amount (ETH):</label>
+                    <input type="number" id="lending-amount" min="0.01" step="0.01" required>
+                    <button type="submit">Execute</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 HabitFi. All rights reserved. Powered by Ethereum, AI, and IoT.</p>
+    </footer>
+    <script src="https://cdn.ethers.io/lib/ethers-5.0.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="script.js"></script>
+    <script src="ai-prediction.js"></script>
+    <script src="blockchain-integration.js"></script>
+    <script src="iot-integration.js"></script>
+    <script src="financial-instruments.js"></script>
+</body>
+</html>
